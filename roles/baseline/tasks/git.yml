@@ -1,0 +1,5 @@
+- name: Install latest version of git client
+  yum:
+    name: git
+    state: latest
+  become: true

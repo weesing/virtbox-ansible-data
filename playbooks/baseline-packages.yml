@@ -1,4 +1,8 @@
 ---
 - hosts: all
   tasks:
-  - include: ./roles/baseline/tasks/main.yml
+  - include: ../roles/baseline/tasks/main.yml
+
+- hosts: ansible
+  tasks:
+  - include: ../roles/baseline/tasks/git.yml
