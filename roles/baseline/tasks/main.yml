@@ -1,0 +1,4 @@
+- name: Install all baseline packages
+  tasks:
+  - yum: tree
+    state: latest
